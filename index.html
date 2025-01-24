@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <style>
+        span {
+            color: yellow;
+            position: relative;
+            top: 1rem;
+            left: 2rem;
+        }
+
+        span:nth-child(2n) {
+            color: blue;
+        }
+
+        #bottom-left-text {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 2000;
+            background-color: black;
+        }
+
+        .container {
+            display: flex;
+            background-color: gray;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+
+            height: 400px;
+        }
+    </style>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- div id="page-wrapper">
+        <div id="navbar">
+            <div>LEFT</div>
+            <div style="margin-left: auto">RIGHT</div>
+        </div>
+        <div id="languages"></div>
+        <div id="main-wrapper">
+            <div id="left-sidebar"></div>
+            <div id="main"></div>
+            <div id="right-sidebar"></div>
+        </div>
+    </div -->
+
+    <div id="grid-wrapper">
+        <div id="grid-navbar">
+            <div>LEFT</div>
+            <div></div>
+            <div>RIGHT</div>
+        </div>
+        <div id="grid-links"></div>
+        <div id="grid-left-sidebar" style="background: lightskyblue"></div>
+        <div id="grid-main" style="background: aquamarine"></div>
+        <div id="grid-right-sidebar" style="background: lightskyblue"></div>
+    </div>
+</body>
+
+</html>
